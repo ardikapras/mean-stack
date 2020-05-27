@@ -1,0 +1,30 @@
+MEAN Stack
+MEAN (MongoDB, Express.js, Angular, and Node.js) is a free and open-source JavaScript software stack for building dynamic web sites and web applications. Front end side will be handled by Angular, meanwhile back end side will be handled by MongoDB and ExpressJS.
+Because all components of the MEAN stack support programs that are written in JavaScript, MEAN applications can be written in one language for both server-side and client-side execution environments.
+
+
+Chapter:
+1. MEAN Stack series - Creating front end using Angular.
+2. MEAN Stack series - Creating back end using MongoDB, NodeJS, and ExpressJS.
+3. MEAN Stack series - Implementing Docker for front end.
+4. MEAN Stack series - Implementing Docker for back end.
+
+What do you need:
+- Node JS
+- 
+
+Environment:
+Windows
+
+Install Angular CLI using npm,
+npm install -g @angular/cli
+
+Create new project, for this tutorial, I name it front-end.
+ng new front-end
+
+Go to the folder and then try to bring up the server.
+cd front-end
+ng serve
+
+By default, you can access http://localhost:4200/ to see your first Angular project!
+
