@@ -1,4 +1,13 @@
-<h1>Hello world!</h1>
-<div>
-  <router-outlet></router-outlet>
+<!-- Navbar (sit on top) -->
+<div class="w3-top no-print">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="" class="w3-bar-item w3-button"><b>AP</b> MEAN Stack</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a routerLink="/" class="w3-bar-item w3-button">Home</a>
+      <a routerLink="/user" class="w3-bar-item w3-button">User Data</a>
+    </div>
+  </div>
 </div>
+
+<router-outlet></router-outlet>

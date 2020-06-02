@@ -1,0 +1,31 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/USR002
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id": "USR003",
+    "firstname": "asdArdika",
+    "lastname": "Prasasdetyo",
+    "email": "me@.email.asdcom",
+    "address": "Malaysiasdaa"
+}
+
+###
+
+PATCH http://localhost:3000/users/USR002
+Content-Type: application/json
+
+{
+    "address": "Indonesia"
+}
+
+###
+
+DELETE http://localhost:3000/users/USR003

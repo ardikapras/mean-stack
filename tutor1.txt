@@ -28,3 +28,8 @@ ng serve
 
 By default, you can access http://localhost:4200/ to see your first Angular project!
 
+
+ng add @angular/material
+npm install —save @angular/material @angular/cdk
+ng generate component user-form
+ng g service user
