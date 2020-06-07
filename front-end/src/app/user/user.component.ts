@@ -15,6 +15,13 @@ export class UserComponent implements OnInit {
   users: User[];
   selectedUser: User;
   inputUser: User;
+  saveUser: User = {
+    id: undefined,
+    firstname: undefined,
+    lastname: undefined,
+    email: undefined,
+    address: undefined
+  };
   displayedColumns: string[] = ['id', 'firstname', 'lastname', 'email', 'address', 'actions'];
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
@@ -42,10 +49,15 @@ export class UserComponent implements OnInit {
   }
   save(form: NgForm) {
     if (form.controls['id'].value) {
-      console.log('present')
+      this.saveUser.id = form.controls['id'].value
     } else {
-      console.log('nothing')
+      this.saveUser.id = ''
     }
+    this.saveUser.firstname = form.controls['firstname'].value
+    this.saveUser.lastname = form.controls['lastname'].value
+    this.saveUser.email = form.controls['email'].value
+    this.saveUser.address = form.controls['address'].value
+    this.userService.saveUser(this.saveUser)
   }
   delete(form: NgForm) {
     console.log(form.controls['id'].value);

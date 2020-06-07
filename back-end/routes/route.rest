@@ -29,3 +29,7 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/users/USR003
+
+###
+
+GET http://localhost:3000/users/count/
